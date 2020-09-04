@@ -1,0 +1,40 @@
+1:project start from app.js file
+2:total API in this project
+  1: balance enquiry(in this find balance for user in this pass cardnumber to find balance for that user)
+    this is post API 
+     in req.body send 
+     cardNumber(this is the variable in which backend we recived)
+   
+   2: Register 
+     this is Also POST API 
+     in this req.body 
+     in backend we pass(email,cardNumber ,balance)
+
+   3: cashwithdraw
+     in this API also  post API 
+     in this we pass cardNumber and inputbalance to with draw cash 
+     in this API two options we can also pass prefferd notes also for the cash
+     variable used for without preffered
+     cardNumber,inputbalance
+
+     for preffred notes
+     we used variable 
+     cardNumber,inputbalance,prefrednotes;[0,0,0,0,0,0,0]
+     prefferdnotes array in which we pass 1 for preffered particular notes rest will be zero 
+      notes starting form index 0 like 1000,500,200,100,50,20,10
+
+
+ABOUT THE FOLDER STRUCTURE
+ start the project using node app.js
+ routes for see the end of the URL 
+ controller for logical execution 
+ services for the database updation 
+ config : for database connection
+ atmwithdrwacash:for the logic of cashwithdraw
+ Errofile:for error file for response of all type of error and action complete
+
+ DATABASE:mysql 
+ I used local phpmyadmin to store the data 
+ tablename:user
+ only three column in table
+ email,cardNumber,balance 
